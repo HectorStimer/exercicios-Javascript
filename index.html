@@ -1,37 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="script.js"></script>
-    <title>exercicios javascript</title>
 </head>
 <body>
-    <h1>aulas 2 javascript</h1>
 
-    <label for="idade">Digite sua idade: </label>
-    <input type="number" id="idade">
-    <button onclick="verificarIdade()">Verificar idade</button>
+    <label for="num1">Digite um numero: </label>
+    <input type="number" name="num1" id="num1">
 
+    <label for="num2">Digite outro numero: </label>
+    <input type="number" name="num2" id="num2">
+
+    <label for="operacao ">Escolha a operacao: </label>
+    <select name="operacao" id="operacao">
+        <option value="soma">soma</option>
+        <option value="subtracao">subtracao</option>
+        <option value="multiplicacao">multiplicacao</option>
+        <option value="divisao">divisao</option>
+    </select>
+
+    <button onclick="operacao()">Enviar</button>
     <p id="resultado"></p>
-
-    <label for="parImpar">Digite um numero: </label>
-    <input type="numer" name="parImpar" id="parImpar">
-    <button onclick="verificarNumero()">Par ou Impar?</button>
-    
-    <p id="numeroPar"></p>
-
-    <label for="posiNega">Digite um numero: </label>
-    <input type="number" name="posiNega" id="posiNega">
-    <button onclick="verificarNega()">Positivo ou negativo?</button>
-
-    <p id="negativo"></p>
-
-    <label for="taboada">Digite um numero para a taboada: </label>
-    <input type="number" name="taboada" id="taboada">
-    <button onclick="verificarTaboada()">Iniciar taboada</button>
-
-    <p id="tabo"></p>
-
 </body>
 </html>
